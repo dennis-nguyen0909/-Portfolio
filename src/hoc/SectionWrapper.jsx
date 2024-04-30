@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { delay, motion } from 'framer-motion'
 import React from 'react'
 import { styles } from '../styles'
 import { staggerContainer } from '../utils/motion'
