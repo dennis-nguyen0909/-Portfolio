@@ -19,12 +19,16 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from "../assets";
-
+import ecomerce from "../assets/ecomerce.png";
+import java from "../assets/java.png";
+import levent from "../assets/levent.png";
+import tanca from "../assets/tanca.png";
+import ant from "../assets/tech/ant.png";
+import javaLogo from "../assets/tech/java.png";
+import next from "../assets/tech/next.png";
+import cSharp from "../assets/tech/cSharp.png";
 export const navLinks = [
   {
     id: "about",
@@ -108,58 +112,74 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
   {
-    name: "docker",
-    icon: docker,
+    name: "Ant Design",
+    icon: ant,
   },
+  // {
+  //   name: "NextJs",
+  //   icon: next,
+  // },
+  // {
+  //   name: "Java",
+  //   icon: javaLogo,
+  // },
+  // {
+  //   name: "C#",
+  //   icon: cSharp,
+  // },
 ];
 
 const experiences = [
+  // {
+  //   title: "React.js Developer",
+  //   company_name: "Starbucks",
+  //   icon: starbucks,
+  //   iconBg: "#383E56",
+  //   date: "March 2020 - April 2021",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "React Native Developer",
+  //   company_name: "Tesla",
+  //   icon: tesla,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2021 - Feb 2022",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Intern Front-end Developer",
+    company_name: "Tanca",
+    icon: tanca,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "March 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -172,10 +192,10 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "I see you work very well and can complete the job requirements.",
+    name: "Vu Hong Phong",
+    designation: "Leader FE",
+    company: "Tanca",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
@@ -198,12 +218,54 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Shop Levent Clothing",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I self-study and build website interfaces . This is the first project so there are many mistakes. Only the interface has been built and the purchasing features have not yet been developed",
     tags: [
       {
-        name: "react",
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: levent,
+    source_code_link: "https://github.com/dennis-nguyen0909/WebClothingStores",
+  },
+  {
+    name: "DICTIONARY ANH VIET",
+    description:
+      "This is my semester project. I use java to handle the logic and models, and for the interface I use java swing. I use Map to manage keywords with keys and values, my project includes the basic functions of a dictionary application. The function I like most is looking up words with the Levenshtein algorithm to find the closest word when not in the map.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "java-swing",
+        color: "green-text-gradient",
+      },
+      {
+        name: "text to speech",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: java,
+    source_code_link: "https://github.com/dennis-nguyen0909/DictionaryJava.git",
+  },
+  {
+    name: "Ecommerce",
+    description:
+      "I taught myself nodejs and reactjs and learned how to create a complete website. I wrote RestfulAPI, using jwt to authenticate users. Combined react-text-to-speach to develop voice search function and integrated openAi with nlp to train more data for AI model for customers Customers can get more information about the shop. This project has many errors that I have not optimized to increase user experience.",
+    tags: [
+      {
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
@@ -211,54 +273,49 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "express",
         color: "pink-text-gradient",
       },
+      {
+        name: "nodejs",
+        color: "black-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ecomerce,
+    source_code_link: "https://fe-ecomerce.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Instagram Clone",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This is my 2nd project using MERN. I wrote restfullAPI for users, posts, reels, messages,.... Implement real-time messaging as well as real-time comments and likes. I store images and videos on cloudinary through multer so I can post multiple photos or one photo for users. For the user interface, I use antd . The project is in the process of being stopped because I'm busy with a lot of work, but will probably continue after a while to complete a complete project.",
     tags: [
       {
-        name: "react",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "express",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "nodejs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "socket.io",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "antd",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: ecomerce,
+    source_code_link: "https://fe-ecomerce.vercel.app/",
   },
 ];
 

@@ -15,7 +15,24 @@ export const textVariant = (delay) => {
     },
   };
 };
-
+export const textVariants = (delay) => {
+  return {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: delay || 0.1, // Khoảng thời gian giữa mỗi chữ cái xuất hiện
+      },
+    },
+  };
+};
+export const letterVariants = {
+  hidden: { opacity: 0, y: 0 },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
 export const fadeIn = (direction, type, delay, duration) => {
   return {
     hidden: {

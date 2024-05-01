@@ -6,7 +6,10 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import { VerticalTimeline,VerticalTimelineElement } from 'react-vertical-timeline-component';
-const ExperienceCard = ({key,experience})=> (
+import { useIntl } from 'react-intl';
+const ExperienceCard = ({key,experience})=> {
+  const intl=useIntl()
+return (
       <VerticalTimelineElement
         contentStyle={{background:'#1d1836',color:"#fff"}}
         contentArrowStyle={{borderRight:'7px solid #232631'}}
@@ -28,19 +31,21 @@ const ExperienceCard = ({key,experience})=> (
                 <li key={`experience-point-${index}`}
                   className='text-white-100 text-[14px] pl-1 tracking-wider'
                 >
-                    {point}
+                    {intl.formatMessage({id:point})}
                 </li>
             ))}
         </ul>
       </VerticalTimelineElement>
   )
+}
 
  const Experience = () => {
+  const intl=useIntl()
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What i have so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>{intl.formatMessage({id:"so_far"})}</p>
+        <h2 className={styles.sectionHeadText}>{intl.formatMessage({id:"work_experience"})}</h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
           <VerticalTimeline>
