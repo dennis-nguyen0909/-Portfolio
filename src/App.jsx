@@ -14,11 +14,11 @@ import { IntlProvider } from 'react-intl';
 import en from './en.json'
 import vi from './vi.json'
 const App = () =>{
-  const locale = (navigator.language ==='vi' ?'en':"vi" ) || 'en'; // Lấy ngôn ngữ của trình duyệt
+  const locale = 'en'; // Lấy ngôn ngữ của trình duyệt
   const [active,setActive]=useState(locale)
   
   const handleOnChange = ()=>{
-    const newLocale = active==='en' ?'vi':'en' 
+    const newLocale = active === 'en' ?'vi':'en' 
     setActive(newLocale)
   }
 
@@ -38,6 +38,7 @@ const App = () =>{
         <div className="relative z-0">
             <Contact />
             <StarsCanvas />
+            
         </div>
       </div>
     </BrowserRouter>

@@ -1,0 +1,11 @@
+.active {
+    left:60px !important;
+    transition: 0.5s ease;
+}
+
+.active-left{
+    display: block;
+    left:4px !important;
+    transition: 0.5s ease;
+
+}

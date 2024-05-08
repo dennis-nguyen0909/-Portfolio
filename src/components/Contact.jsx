@@ -6,7 +6,9 @@ import{EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { useIntl } from 'react-intl';
-import { message } from 'antd';
+import { Button, message } from 'antd';
+import '../contact.css'
+import { useScroll } from '@react-three/drei';
 // template_g0zxpiv
 // service_8nt0esq
 // Aoh3AKuCq2JsNN-3V
@@ -47,6 +49,8 @@ import { message } from 'antd';
   })
     
   }
+  const [active,setActive]=useState(false)
+  const[toggle,setToggle]=useState(false)
   
   const handleOnChange=(e)=>{
     const {name,value}=e.target;

@@ -29,6 +29,9 @@ import ant from "../assets/tech/ant.png";
 import javaLogo from "../assets/tech/java.png";
 import next from "../assets/tech/next.png";
 import cSharp from "../assets/tech/cSharp.png";
+// import petshop from "../assets/tech/petshop.png";
+import intaFe from "../assets/inta_fe.png";
+import petShop from "../assets/petshop.png";
 export const navLinks = [
   {
     id: "about",
@@ -239,6 +242,23 @@ const projects = [
     source_code_link: "https://github.com/dennis-nguyen0909/WebClothingStores",
   },
   {
+    name: "Pet Shop Basic",
+    description:
+      "I used useContext to practice how it works and understand more about ReactJs useContext hook",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "green-text-gradient",
+      },
+    ],
+    image: petShop,
+    source_code_link: "https://github.com/dennis-nguyen0909/petShopBasic",
+  },
+  {
     name: "DICTIONARY ANH VIET",
     description:
       "This is my semester project. I use java to handle the logic and models, and for the interface I use java swing. I use Map to manage keywords with keys and values, my project includes the basic functions of a dictionary application. The function I like most is looking up words with the Levenshtein algorithm to find the closest word when not in the map.",
@@ -314,7 +334,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: ecomerce,
+    image: intaFe,
     source_code_link: "https://fe-ecomerce.vercel.app/",
   },
 ];
