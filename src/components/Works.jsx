@@ -7,7 +7,7 @@ import { projects } from '../constants'
 import { Tilt } from 'react-tilt'
 import { github } from '../assets'
 import { useIntl } from 'react-intl'
-const ProjectCard = ({index,name,description,tags,image,source_code_link})=>{
+const ProjectCard = ({index,name,description,tags,image,source_code_link,link})=>{
   const intl=useIntl()
   return(
     <motion.div variants={fadeIn("up","spring",index*0.5,0.75)}>
@@ -33,6 +33,12 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link})=>{
                 <h3 className='text-white font-bold text-[24px]'>{name}</h3>
                 <p className='text-secondary mt-2 text-[14px]'>{intl.formatMessage({id:description})}</p>
           </div>  
+          <div>
+  <a href={link} target='_blank' rel='noopener noreferrer' className="text-blue-500">
+    {link}
+  </a>
+</div>
+
           <div className='mt-4 flex flex-wrap gap-2'>
               {tags.map((tag)=>(
                 <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>

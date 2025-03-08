@@ -32,6 +32,9 @@ import cSharp from "../assets/tech/cSharp.png";
 // import petshop from "../assets/tech/petshop.png";
 import intaFe from "../assets/inta_fe.png";
 import petShop from "../assets/petshop.png";
+import nest from "../assets/tech/nest.jpg";
+import hireDev from "../assets/hiredev.png";
+import webSport from "../assets/web_sport.png";
 export const navLinks = [
   {
     id: "about",
@@ -67,14 +70,6 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -115,10 +110,10 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
+  {
+    name: "docker",
+    icon: docker,
+  },
   {
     name: "Ant Design",
     icon: ant,
@@ -127,67 +122,28 @@ const technologies = [
   //   name: "NextJs",
   //   icon: next,
   // },
-  // {
-  //   name: "Java",
-  //   icon: javaLogo,
-  // },
-  // {
-  //   name: "C#",
-  //   icon: cSharp,
-  // },
+  {
+    name: "Java",
+    icon: javaLogo,
+  },
+  {
+    name: "NestJS",
+    icon: nest,
+  },
 ];
 
 const experiences = [
-  // {
-  //   title: "React.js Developer",
-  //   company_name: "Starbucks",
-  //   icon: starbucks,
-  //   iconBg: "#383E56",
-  //   date: "March 2020 - April 2021",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-  // {
-  //   title: "React Native Developer",
-  //   company_name: "Tesla",
-  //   icon: tesla,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2021 - Feb 2022",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-  // {
-  //   title: "Web Developer",
-  //   company_name: "Shopify",
-  //   icon: shopify,
-  //   iconBg: "#383E56",
-  //   date: "Jan 2022 - Jan 2023",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
-    title: "Intern Front-end Developer",
-    company_name: "Tanca",
+    title: "Front-end Developer",
+    company_name: "Tanca (Part-Time)",
     icon: tanca,
     iconBg: "#E6DEDD",
     date: "March 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I collaborated with the team to develop a Learning Management System software along with its mobile app",
+      "I developed the system history feature to record user actions, working closely with the backend team",
+      "Additionally, I programmed both web and mobile applications for the HRM-Cloudify partner",
+      "I researched and optimized website performance and code, as well as fixed issues reported by users. Furthermore, I contributed to the development of web and mobile application features with the API team",
     ],
   },
 ];
@@ -221,6 +177,99 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Hire Dev",
+    description:
+      "A full-stack recruitment platform enabling employers to post job listings and candidates to apply. The system features real-time notifications, candidate tracking, and employer dashboards.",
+    tags: [
+      {
+        name: "NestJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ReactJs+TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "FlaskAPI",
+        color: "grey-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Swagger",
+        color: "red-text-gradient",
+      },
+    ],
+    link: "https://hire-dev.online",
+    image: hireDev,
+    source_code_link: "https://github.com/dennis-nguyen0909",
+  },
+  {
+    name: "Ecommerce",
+    description:
+      "I taught myself nodejs and reactjs and learned how to create a complete website. I wrote RestfulAPI, using jwt to authenticate users. Combined react-text-to-speach to develop voice search function and integrated openAi with nlp to train more data for AI model for customers Customers can get more information about the shop. This project has many errors that I have not optimized to increase user experience.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "black-text-gradient",
+      },
+    ],
+    image: ecomerce,
+    source_code_link: "https://fe-ecomerce.vercel.app/",
+    link: "https://fe-ecomerce.vercel.app",
+  },
+  {
+    name: "Instagram Clone",
+    description:
+      "This is my 2nd project using MERN. I wrote restfullAPI for users, posts, reels, messages,.... Implement real-time messaging as well as real-time comments and likes. I store images and videos on cloudinary through multer so I can post multiple photos or one photo for users. For the user interface, I use antd . The project is in the process of being stopped because I'm busy with a lot of work, but will probably continue after a while to complete a complete project.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "antd",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: intaFe,
+    source_code_link: "https://fe-ecomerce.vercel.app/",
+  },
+  {
     name: "Shop Levent Clothing",
     description:
       "I self-study and build website interfaces . This is the first project so there are many mistakes. Only the interface has been built and the purchasing features have not yet been developed",
@@ -240,6 +289,29 @@ const projects = [
     ],
     image: levent,
     source_code_link: "https://github.com/dennis-nguyen0909/WebClothingStores",
+    link: "https://levents-sable.vercel.app",
+  },
+  {
+    name: "Web Sports",
+    description:
+      "This is a static website built with pure html, css, javascript",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: webSport,
+    source_code_link: "https://minhduy-shop.vercel.app",
+    link: "https://minhduy-shop.vercel.app",
   },
   {
     name: "Pet Shop Basic",
@@ -278,64 +350,6 @@ const projects = [
     ],
     image: java,
     source_code_link: "https://github.com/dennis-nguyen0909/DictionaryJava.git",
-  },
-  {
-    name: "Ecommerce",
-    description:
-      "I taught myself nodejs and reactjs and learned how to create a complete website. I wrote RestfulAPI, using jwt to authenticate users. Combined react-text-to-speach to develop voice search function and integrated openAi with nlp to train more data for AI model for customers Customers can get more information about the shop. This project has many errors that I have not optimized to increase user experience.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "black-text-gradient",
-      },
-    ],
-    image: ecomerce,
-    source_code_link: "https://fe-ecomerce.vercel.app/",
-  },
-  {
-    name: "Instagram Clone",
-    description:
-      "This is my 2nd project using MERN. I wrote restfullAPI for users, posts, reels, messages,.... Implement real-time messaging as well as real-time comments and likes. I store images and videos on cloudinary through multer so I can post multiple photos or one photo for users. For the user interface, I use antd . The project is in the process of being stopped because I'm busy with a lot of work, but will probably continue after a while to complete a complete project.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "antd",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: intaFe,
-    source_code_link: "https://fe-ecomerce.vercel.app/",
   },
 ];
 
